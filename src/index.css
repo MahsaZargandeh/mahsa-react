@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.features{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:30px;
+ padding:50px;
+}
+
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+
+transition:.3s;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+.card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+
+@media(max-width:768px){
+
+.features{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+}
